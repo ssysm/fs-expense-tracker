@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Post = require('../../models/Post');
+const User = require('../../models/User');
 const {handler} = require('../../common');
 //Delete User based on Object Id
 //@method:DELETE
@@ -7,7 +7,7 @@ const {handler} = require('../../common');
 //@return:JSON Object
 deleteUser = (req,res)=>{
     const {uid} = req.body;
-    Post.remove({
+    User.remove({
         _id:mongoose.Types.ObjectId(uid)
     },(err,docs)=>{
         handler(req,res,err,docs)
