@@ -5,7 +5,7 @@ const User = require('../../models/User');
 //@return:JSON Array
 list = (req,res)=> {
     const {page,limit} = req.query;
-    User.find({},[],(err,docs)=>{
+    User.find({},["username","admin"],(err,docs)=>{
         if(err){
             res.status(500).json({success:false,response:err})
         }else{
