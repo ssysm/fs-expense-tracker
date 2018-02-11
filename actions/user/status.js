@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+const {handler} = require('../../common');
 //Get Current User Status
 //@method:GET
 //@cookie:token
@@ -10,16 +11,7 @@ status = (req,res) => {
         })
     }else{
         jwt.verify(req.cookies.token, require('../../config').jwtSecret, function(err, decoded) {
-            if(err){
-                res.status(403).json({
-                    success:false
-                })
-            }else{
-                res.status(200).json({
-                    success:true,
-                    response:decoded
-                })
-            }
+            handler(req,res,err,decoded)
         });
     }
 };

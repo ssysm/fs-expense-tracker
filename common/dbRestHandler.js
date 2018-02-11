@@ -12,4 +12,4 @@ handler = (req,res,err,docs)=>{
     }
 };
 
-module.exports.handler = handler;
+module.exports = handler;

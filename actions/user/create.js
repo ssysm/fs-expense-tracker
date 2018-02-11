@@ -1,6 +1,6 @@
 const User = require('../../models/User');
 const bcrypt = require('bcrypt-nodejs');
-const {handler}  = require('../../common/dbRestHandler');
+const {handler}  = require('../../common/');
 //Create User
 //@method:POST
 //@body:username,password,admin

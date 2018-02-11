@@ -1,6 +1,6 @@
 const mongoose  = require('mongoose');
 const User = require('../../models/User');
-const {handler} = require('../../common/dbRestHandler');
+const {handler} = require('../../common/');
 //Get User Info
 //@method:GET
 //@query:uid

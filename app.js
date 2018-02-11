@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var post = require('./routes/post');
 
 var app = express();
 
@@ -24,6 +25,7 @@ app.all('*', function(req, res, next) {
         next();
 });
 app.use('/', index);
+app.use('/post',post);
 app.use('/users', users);
 
 // catch 404 and forward to error handler
@@ -35,10 +37,10 @@ app.use(function(req, res, next) {
 
 // error handler
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-  res.status(err.status || 500).send(err);
+    // set locals, only providing error in development
+    res.locals.message = err.message;
+    res.locals.error = req.app.get('env') === 'development' ? err : {};
+    res.status(err.status).send(err)
 });
 
 module.exports = app;

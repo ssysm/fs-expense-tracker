@@ -9,6 +9,13 @@ const schema = mongoose.Schema({
         type:String,
         required:true
     },
+    summary:{
+      type:String,
+        require:true
+    },
+    tags:{
+      type:Array
+    },
     author_id:{
         type:String,
         required:true
