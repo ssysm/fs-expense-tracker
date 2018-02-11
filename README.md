@@ -17,7 +17,7 @@ A Lightweight, Simple, RESTful API CMS system
 ### Run
    
 #### Run API Server
-   (No `npm install`,assume you did everything in [Configuration](#Configuration))
+   (No `npm install`,assume you did everything in [Configuration](#configuration))
    
     $ npm run start
     
