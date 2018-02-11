@@ -14,7 +14,7 @@ A Lightweight, Simple, RESTful API CMS system
         - `jwtSecret`:Secret for JWT Token, default:`restcms` **HIGHLY RECOMMEND TO CHANGE THIS DUE TO SECURITY ISSUE!**
    - `npm install`
    - `node migrate.js`
-       - Default admin username:`username`
+       - Default admin username:`admin`
        - Default admin password:`password`
 ### Run
    
