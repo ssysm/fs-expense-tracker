@@ -1,4 +1,4 @@
 module.exports ={
-    database:"",
-    jwtSecret:""
+    database:"mongodb://localhost:27017/restcms",
+    jwtSecret:"restcms"
 };
