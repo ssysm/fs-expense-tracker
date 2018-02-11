@@ -5,10 +5,17 @@ handler = (req,res,err,docs)=>{
             response:err
         })
     }else{
-        res.status(200).json({
-            success:true,
-            response:docs
-        })
+       if(!docs){
+           res.status(404).json({
+               success:false,
+               response:docs
+           })
+       }else{
+           res.status(200).json({
+               success:true,
+               response:docs
+           })
+       }
     }
 };
 

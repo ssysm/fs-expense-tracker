@@ -7,9 +7,8 @@ const {handler}  = require('../../common/');
 //@return:JSON Object
 createUser = (req,res)=>{
     const { username,password,admin} = req.body;
-    const data = { username,password:bcrypt.hashSync(password),admin};
-    console.log('123');
-    User.create(data,["username,admin"],(err,docs)=>{
+    const data = { username:username,password:bcrypt.hashSync(password),admin:admin};
+    User.create(data,(err,docs)=>{
         handler(req,res,err,docs)
     })
 };
