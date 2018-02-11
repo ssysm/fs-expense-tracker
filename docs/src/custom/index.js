@@ -5,8 +5,8 @@
  * media queries.
  */
 module.exports.brandNames = {
-  desktop: 'RESTful CMS Docs',
-  tablet: 'RESTful CMS Docs',
+  desktop: 'REST CMS Docs',
+  tablet: 'REST CMS Docs',
   mobile: 'API Docs'
 };
 

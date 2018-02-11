@@ -12,5 +12,7 @@ var fs = require('fs');
 module.exports =
   '# Introduction\n' +
   fs.readFileSync('./content/introduction.md', 'utf8') + '\n' +
-  '# Example\n' +
-  fs.readFileSync('./content/example.md', 'utf8') + '\n';
+  '# User Account\n' +
+  fs.readFileSync('./content/account.md', 'utf8') + '\n' +
+    '# Post&Content\n' +
+    fs.readFileSync('./content/post.md','utf-8')+ '\n';

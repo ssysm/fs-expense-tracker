@@ -70,11 +70,6 @@ describe('content', () => {
         });
       });
 
-      it('has h2 title', function() {
-        expect(ast.children[0].type).toEqual('heading');
-        expect(ast.children[0].depth).toEqual(2);
-      });
-
       it('has API description', function() {
         expect(ast.children[1].type === 'paragraph' || ast.children[1].type === 'html').toEqual(true);
       });

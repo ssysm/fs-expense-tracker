@@ -1,4 +1,4 @@
-# RESTCMS
+# REST CMS
 A Lightweight, Simple, RESTful API CMS system
 
 ## Setup
@@ -11,9 +11,11 @@ A Lightweight, Simple, RESTful API CMS system
    - Copy `config.js.example` to `config.js` 
    - Edit `config.js`
         - `database`:MongoDB Connection URI, default:`mongodb://localhost:27017/restcms`
-        - `jwtSecret`:Secret for JWT Token, default:`restcms` **HIGHLY RECOMMEND CHANGE THIS DUE TO SECURITY ISSUE!**
+        - `jwtSecret`:Secret for JWT Token, default:`restcms` **HIGHLY RECOMMEND TO CHANGE THIS DUE TO SECURITY ISSUE!**
    - `npm install`
    - `node migrate.js`
+       - Default admin username:`username`
+       - Default admin password:`password`
 ### Run
    
 #### Run API Server

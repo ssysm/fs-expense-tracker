@@ -9,6 +9,7 @@ User.create(data,(err,docs)=>{
    if(err){
        throw err
    }else{
+       console.log(docs);
        console.log('Migration Finished!');
        process.exit(0);
    }
