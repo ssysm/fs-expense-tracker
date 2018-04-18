@@ -1,5 +1,13 @@
 # Summary of your issue
 
+## Did you asked Google/Stack Overflow?
+
+```
+The answer should be YES
+
+If no,then please to. Your problem may encountered by someone else.
+```
+
 ## The problem I encountered:
 ```
 Please describe your problem here, as detail as possible
